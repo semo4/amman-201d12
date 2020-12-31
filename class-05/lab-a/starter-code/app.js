@@ -83,12 +83,21 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+    var sumArrayNumber = 0;
+    for(var i =0 ; i< sumArr.length; i++){
+        sumArrayNumber = sum(sumArrayNumber, sumArr[i])[0];
+    }
 
+    var resultArray = [
+        sumArrayNumber,
+        "2,3,4 was passed in as an array of numbers, and 9 is their sum."
+    ];
+    return resultArray;
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -105,8 +114,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
     var multipleArrayNumber = 1;
-    for(var i =0 ; i< testArray.length; i++){
-        multipleArrayNumber = multiply(multipleArrayNumber, testArray[i])[0];
+    for(var i =0 ; i< multArr.length; i++){
+        multipleArrayNumber = multiply(multipleArrayNumber, multArr[i])[0];
     }
     var resultArray = [
         multipleArrayNumber,
@@ -141,8 +150,8 @@ var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
     var multipleArrayNumber = 1;
-    for(var i =0 ; i< testDynamicArray.length; i++){
-        multipleArrayNumber = multiply(multipleArrayNumber, testDynamicArray[i])[0];
+    for(var i =0 ; i< dynamicArray.length; i++){
+        multipleArrayNumber = multiply(multipleArrayNumber, dynamicArray[i])[0];
     }
     var resultArray = [
         multipleArrayNumber,

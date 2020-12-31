@@ -70,11 +70,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
         "4 and 7 and 5 sum to 16.",
         "The product of 4 and 7 and 5 is 140."
     ];
-
     return resultArray;
-
-
-
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
